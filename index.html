@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strong Password</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="global-container">
+      <!-- <form action="" method="post" class="form"></form> -->
+       <p>Votre mot de passe</p>
+      <div class="input-container">
+          <input type="text" id="password" />
+          <div class="image-container">
+            <img src="ressources/copy.svg" alt="copy" />
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="input-container">
+        <label for="range-input">Taille du mot de passe: 10</label>
+        <input type="range" min="0" max="10" id="range-input" />
+      </div>
+      <div class="input-container">
+        <label for="minuscules">Contient des caractères minuscules</label>
+        <input type="checkbox" id="minuscules" />
+      </div>
+      <div class="input-container">
+        <label for="majuscules">Contient des caractères majuscules</label>
+        <input type="checkbox" id="majuscules" />
+      </div>
+      <div class="input-container">
+        <label for=special-charts">Contient des nombres</label>
+        <input type="checkbox" id=special-charts" />
+      </div>
+      <div class="input-container">
+        <label for="special-charts">contient des caractères spéciaux</label>
+        <input type="checkbox" id="special-charts" />
+      </div>
+      <button class="generate">Générer</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
